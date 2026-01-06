@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect - AyahSync</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="AyahSync Logo">
+                    <span>AyahSync</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="connect.html" class="active">Connect</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONNECT SECTION -->
+    <section id="connect" class="full-section">
+        <div class="page-header-inline">
+            <div class="container">
+                <h1>Connect With Us</h1>
+                <p>Share your thoughts, feedback, or request personalized guidance</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="container">
+                <div class="form-container">
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mood">Current Mood</label>
+                            <select id="mood" name="mood" required>
+                                <option value="">Select your current mood</option>
+                                <option value="sad">Sad</option>
+                                <option value="happy">Happy</option>
+                                <option value="anxious">Anxious</option>
+                                <option value="lost">Lost</option>
+                                <option value="angry">Angry</option>
+                                <option value="grateful">Grateful</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Share your thoughts, questions, or feedback with us..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </div>
+                    </form>
+
+                    <div class="form-info">
+                        <h3>Why Connect?</h3>
+                        <p>Your feedback helps us improve AyahSync and make it more relevant to your spiritual journey. Whether you have suggestions, need guidance, or want to share how AyahSync has helped you, we would love to hear from you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AyahSync. A Semester Project for Web Development Course.</p>
+        </div>
+    </footer>
+</body>
+</html>

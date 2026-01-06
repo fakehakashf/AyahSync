@@ -1,1 +1,391 @@
-<h1>Welcome to AyahSync</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyahSync - Find Peace Through Divine Guidance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="AyahSync Logo">
+                    <span>AyahSync</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href=" class="active">Home</a></li>
+                    <li><a href="pages/library.html">Library</a></li>
+                    <li><a href="pages/connect.html">Connect</a></li>
+                    <li><a href="pages/insights.html">Insights</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="full-section">
+        <div class="hero">
+            <div class="container">
+                <h1>AyahSync</h1>
+                <p class="tagline">Connecting Hearts with Divine Wisdom for Every Emotion</p>
+            </div>
+        </div>
+
+        <div class="introduction">
+            <div class="container">
+                <h2>Welcome to AyahSync</h2>
+                <p>AyahSync is a compassionate digital companion designed to help you find solace and guidance through the timeless verses of the Holy Quran. In moments of joy, sadness, anxiety, or gratitude, discover Ayahs that speak directly to your heart.</p>
+            </div>
+        </div>
+
+        <div class="mood-selection">
+            <div class="container">
+                <h2>How are you feeling today?</h2>
+                <p class="section-description">Select your current mood to discover relevant verses from the Holy Quran</p>
+                
+                <div class="mood-grid">
+                    <!-- SAD MOOD -->
+                    <div class="mood-wrapper">
+                        <input type="radio" name="mood-selector" id="modal-sad" class="modal-radio">
+                        <label for="modal-sad" class="mood-card">
+                            <h3>Sad</h3>
+                            <p>Finding comfort in times of sorrow</p>
+                        </label>
+                        
+                        <div class="modal-overlay">
+                            <div class="modal-content">
+                                <label for="close-modal" class="modal-close">&times;</label>
+                                <div class="modal-header">
+                                    <h3>For When You Feel Sad</h3>
+                                </div>
+                                
+                                <input type="radio" name="sad-ayah" id="sad-ayah-1" class="ayah-radio" checked>
+                                <input type="radio" name="sad-ayah" id="sad-ayah-2" class="ayah-radio">
+                                <input type="radio" name="sad-ayah" id="sad-ayah-3" class="ayah-radio">
+                                
+                                <div class="modal-body">
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"So verily, with the hardship, there is relief. Verily, with the hardship, there is relief."</p>
+                                        <p class="ayah-reference">Surah Ash-Sharh (94:5-6)</p>
+                                        <p class="ayah-message">Remember that every difficulty comes with ease. Your sadness is temporary, and relief is promised by Allah.</p>
+                                        <p class="ayah-counter">Ayah 1 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"And He found you lost and guided you."</p>
+                                        <p class="ayah-reference">Surah Ad-Duha (93:7)</p>
+                                        <p class="ayah-message">Allah has always been your guide. Even in your sadness, His guidance will lead you to comfort.</p>
+                                        <p class="ayah-counter">Ayah 2 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"Do not grieve; indeed Allah is with us."</p>
+                                        <p class="ayah-reference">Surah At-Tawbah (9:40)</p>
+                                        <p class="ayah-message">You are never alone in your sadness. Allah is always with you, providing comfort and strength.</p>
+                                        <p class="ayah-counter">Ayah 3 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-navigation">
+                                        <label for="sad-ayah-2" class="next-ayah-btn ayah-1-next">Next Ayah →</label>
+                                        <label for="sad-ayah-3" class="next-ayah-btn ayah-2-next">Next Ayah →</label>
+                                        <label for="sad-ayah-1" class="next-ayah-btn ayah-3-next">Next Ayah →</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HAPPY MOOD -->
+                    <div class="mood-wrapper">
+                        <input type="radio" name="mood-selector" id="modal-happy" class="modal-radio">
+                        <label for="modal-happy" class="mood-card">
+                            <h3>Happy</h3>
+                            <p>Expressing joy and gratitude</p>
+                        </label>
+                        
+                        <div class="modal-overlay">
+                            <div class="modal-content">
+                                <label for="close-modal" class="modal-close">&times;</label>
+                                <div class="modal-header">
+                                    <h3>For When You Feel Happy</h3>
+                                </div>
+                                
+                                <input type="radio" name="happy-ayah" id="happy-ayah-1" class="ayah-radio" checked>
+                                <input type="radio" name="happy-ayah" id="happy-ayah-2" class="ayah-radio">
+                                <input type="radio" name="happy-ayah" id="happy-ayah-3" class="ayah-radio">
+                                
+                                <div class="modal-body">
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"If you are grateful, I will surely increase you in favor."</p>
+                                        <p class="ayah-reference">Surah Ibrahim (14:7)</p>
+                                        <p class="ayah-message">Express gratitude for your joy, and Allah will multiply your blessings. True happiness comes from thankfulness.</p>
+                                        <p class="ayah-counter">Ayah 1 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"And as for the favor of your Lord, report it."</p>
+                                        <p class="ayah-reference">Surah Ad-Duha (93:11)</p>
+                                        <p class="ayah-message">Share your happiness with others. Speaking about Allah's blessings increases joy and inspires gratitude.</p>
+                                        <p class="ayah-counter">Ayah 2 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"So remember Me; I will remember you. And be grateful to Me and do not deny Me."</p>
+                                        <p class="ayah-reference">Surah Al-Baqarah (2:152)</p>
+                                        <p class="ayah-message">In your happiness, remember Allah. Your gratitude draws you closer to Him and brings eternal joy.</p>
+                                        <p class="ayah-counter">Ayah 3 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-navigation">
+                                        <label for="happy-ayah-2" class="next-ayah-btn ayah-1-next">Next Ayah →</label>
+                                        <label for="happy-ayah-3" class="next-ayah-btn ayah-2-next">Next Ayah →</label>
+                                        <label for="happy-ayah-1" class="next-ayah-btn ayah-3-next">Next Ayah →</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ANXIOUS MOOD -->
+                    <div class="mood-wrapper">
+                        <input type="radio" name="mood-selector" id="modal-anxious" class="modal-radio">
+                        <label for="modal-anxious" class="mood-card">
+                            <h3>Anxious</h3>
+                            <p>Seeking peace and tranquility</p>
+                        </label>
+                        
+                        <div class="modal-overlay">
+                            <div class="modal-content">
+                                <label for="close-modal" class="modal-close">&times;</label>
+                                <div class="modal-header">
+                                    <h3>For When You Feel Anxious</h3>
+                                </div>
+                                
+                                <input type="radio" name="anxious-ayah" id="anxious-ayah-1" class="ayah-radio" checked>
+                                <input type="radio" name="anxious-ayah" id="anxious-ayah-2" class="ayah-radio">
+                                <input type="radio" name="anxious-ayah" id="anxious-ayah-3" class="ayah-radio">
+                                
+                                <div class="modal-body">
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"Those who have believed and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured."</p>
+                                        <p class="ayah-reference">Surah Ar-Ra'd (13:28)</p>
+                                        <p class="ayah-message">Find peace through remembrance of Allah. Your anxiety will fade when you trust in His perfect plan.</p>
+                                        <p class="ayah-counter">Ayah 1 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"Allah does not burden a soul beyond that it can bear."</p>
+                                        <p class="ayah-reference">Surah Al-Baqarah (2:286)</p>
+                                        <p class="ayah-message">Whatever challenges you face, Allah knows you have the strength to handle them. Trust in His wisdom.</p>
+                                        <p class="ayah-counter">Ayah 2 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"And whoever fears Allah - He will make for him a way out and will provide for him from where he does not expect."</p>
+                                        <p class="ayah-reference">Surah At-Talaq (65:2-3)</p>
+                                        <p class="ayah-message">Your anxiety about the future is natural, but Allah promises solutions beyond your imagination.</p>
+                                        <p class="ayah-counter">Ayah 3 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-navigation">
+                                        <label for="anxious-ayah-2" class="next-ayah-btn ayah-1-next">Next Ayah →</label>
+                                        <label for="anxious-ayah-3" class="next-ayah-btn ayah-2-next">Next Ayah →</label>
+                                        <label for="anxious-ayah-1" class="next-ayah-btn ayah-3-next">Next Ayah →</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LOST MOOD -->
+                    <div class="mood-wrapper">
+                        <input type="radio" name="mood-selector" id="modal-lost" class="modal-radio">
+                        <label for="modal-lost" class="mood-card">
+                            <h3>Lost</h3>
+                            <p>Discovering direction and purpose</p>
+                        </label>
+                        
+                        <div class="modal-overlay">
+                            <div class="modal-content">
+                                <label for="close-modal" class="modal-close">&times;</label>
+                                <div class="modal-header">
+                                    <h3>For When You Feel Lost</h3>
+                                </div>
+                                
+                                <input type="radio" name="lost-ayah" id="lost-ayah-1" class="ayah-radio" checked>
+                                <input type="radio" name="lost-ayah" id="lost-ayah-2" class="ayah-radio">
+                                <input type="radio" name="lost-ayah" id="lost-ayah-3" class="ayah-radio">
+                                
+                                <div class="modal-body">
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"And whoever relies upon Allah - then He is sufficient for him. Indeed, Allah will accomplish His purpose."</p>
+                                        <p class="ayah-reference">Surah At-Talaq (65:3)</p>
+                                        <p class="ayah-message">When you feel directionless, place your trust in Allah. He will guide you to the right path.</p>
+                                        <p class="ayah-counter">Ayah 1 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"Guide us to the straight path - The path of those upon whom You have bestowed favor."</p>
+                                        <p class="ayah-reference">Surah Al-Fatihah (1:6-7)</p>
+                                        <p class="ayah-message">Ask Allah for guidance daily. He promises to show the way to those who sincerely seek Him.</p>
+                                        <p class="ayah-counter">Ayah 2 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"And when My servants ask you concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me."</p>
+                                        <p class="ayah-reference">Surah Al-Baqarah (2:186)</p>
+                                        <p class="ayah-message">You are never too lost for Allah to find you. Call upon Him, and He will answer your need for direction.</p>
+                                        <p class="ayah-counter">Ayah 3 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-navigation">
+                                        <label for="lost-ayah-2" class="next-ayah-btn ayah-1-next">Next Ayah →</label>
+                                        <label for="lost-ayah-3" class="next-ayah-btn ayah-2-next">Next Ayah →</label>
+                                        <label for="lost-ayah-1" class="next-ayah-btn ayah-3-next">Next Ayah →</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ANGRY MOOD -->
+                    <div class="mood-wrapper">
+                        <input type="radio" name="mood-selector" id="modal-angry" class="modal-radio">
+                        <label for="modal-angry" class="mood-card">
+                            <h3>Angry</h3>
+                            <p>Cultivating patience and forgiveness</p>
+                        </label>
+                        
+                        <div class="modal-overlay">
+                            <div class="modal-content">
+                                <label for="close-modal" class="modal-close">&times;</label>
+                                <div class="modal-header">
+                                    <h3>For When You Feel Angry</h3>
+                                </div>
+                                
+                                <input type="radio" name="angry-ayah" id="angry-ayah-1" class="ayah-radio" checked>
+                                <input type="radio" name="angry-ayah" id="angry-ayah-2" class="ayah-radio">
+                                <input type="radio" name="angry-ayah" id="angry-ayah-3" class="ayah-radio">
+                                
+                                <div class="modal-body">
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"Who spend in the cause of Allah during ease and hardship and who restrain anger and who pardon the people - and Allah loves the doers of good."</p>
+                                        <p class="ayah-reference">Surah Al-Imran (3:134)</p>
+                                        <p class="ayah-message">Control your anger and choose forgiveness. Paradise awaits those who practice patience and pardon others.</p>
+                                        <p class="ayah-counter">Ayah 1 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"And not equal are the good deed and the bad. Repel evil by that which is better; and thereupon the one whom between you and him is enmity will become as though he was a devoted friend."</p>
+                                        <p class="ayah-reference">Surah Fussilat (41:34)</p>
+                                        <p class="ayah-message">Respond to anger with kindness. This transforms enemies into friends and brings peace to your heart.</p>
+                                        <p class="ayah-counter">Ayah 2 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"And if you punish an enemy, punish with an equivalent of that with which you were harmed. But if you are patient - it is better for those who are patient."</p>
+                                        <p class="ayah-reference">Surah An-Nahl (16:126)</p>
+                                        <p class="ayah-message">While justice is your right, patience and forgiveness are virtues that elevate your soul and please Allah.</p>
+                                        <p class="ayah-counter">Ayah 3 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-navigation">
+                                        <label for="angry-ayah-2" class="next-ayah-btn ayah-1-next">Next Ayah →</label>
+                                        <label for="angry-ayah-3" class="next-ayah-btn ayah-2-next">Next Ayah →</label>
+                                        <label for="angry-ayah-1" class="next-ayah-btn ayah-3-next">Next Ayah →</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GRATEFUL MOOD -->
+                    <div class="mood-wrapper">
+                        <input type="radio" name="mood-selector" id="modal-grateful" class="modal-radio">
+                        <label for="modal-grateful" class="mood-card">
+                            <h3>Grateful</h3>
+                            <p>Celebrating blessings and thankfulness</p>
+                        </label>
+                        
+                        <div class="modal-overlay">
+                            <div class="modal-content">
+                                <label for="close-modal" class="modal-close">&times;</label>
+                                <div class="modal-header">
+                                    <h3>For When You Feel Grateful</h3>
+                                </div>
+                                
+                                <input type="radio" name="grateful-ayah" id="grateful-ayah-1" class="ayah-radio" checked>
+                                <input type="radio" name="grateful-ayah" id="grateful-ayah-2" class="ayah-radio">
+                                <input type="radio" name="grateful-ayah" id="grateful-ayah-3" class="ayah-radio">
+                                
+                                <div class="modal-body">
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"And He gave you from all you asked of Him. And if you should count the favor of Allah, you could not enumerate them."</p>
+                                        <p class="ayah-reference">Surah Ibrahim (14:34)</p>
+                                        <p class="ayah-message">Allah's blessings are countless. Take time to acknowledge and appreciate all that you have been given.</p>
+                                        <p class="ayah-counter">Ayah 1 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"And whatever you have of favor - it is from Allah."</p>
+                                        <p class="ayah-reference">Surah An-Nahl (16:53)</p>
+                                        <p class="ayah-message">Every blessing in your life, big or small, is a gift from Allah. Recognize His generosity in all things.</p>
+                                        <p class="ayah-counter">Ayah 2 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-slide">
+                                        <p class="ayah-text">"Is the reward for good anything but good?"</p>
+                                        <p class="ayah-reference">Surah Ar-Rahman (55:60)</p>
+                                        <p class="ayah-message">Your gratitude is rewarded with more blessings. Express thanks, and watch Allah's mercy multiply in your life.</p>
+                                        <p class="ayah-counter">Ayah 3 of 3</p>
+                                    </div>
+                                    
+                                    <div class="ayah-navigation">
+                                        <label for="grateful-ayah-2" class="next-ayah-btn ayah-1-next">Next Ayah →</label>
+                                        <label for="grateful-ayah-3" class="next-ayah-btn ayah-2-next">Next Ayah →</label>
+                                        <label for="grateful-ayah-1" class="next-ayah-btn ayah-3-next">Next Ayah →</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden radio button to close any modal -->
+        <input type="radio" name="mood-selector" id="close-modal" class="modal-radio">
+
+        <!-- Team Section -->
+        <div class="team">
+            <div class="container">
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>Fakeha Kashf</h3>
+                        <p>Project Lead & Frontend Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Ujala Fareed</h3>
+                        <p>Content Research & UI Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Noor Fatima</h3>
+                        <p>Documentation & Quality Assurance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AyahSync. A Semester Project of Web Development.</p>
+        </div>
+    </footer>
+</body>
+</html>
